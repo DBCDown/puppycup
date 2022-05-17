@@ -1,24 +1,19 @@
-import Link from "next/link";
+import Link from 'next/link'
+import Footer from '../footer/Footer'
+import Header from '../header/Header'
+import Logo from '../header/Logo'
+import NavMain from '../navigation/NavMain'
 
 export default function Layout({ children }) {
   return (
-    <div className={`wrapper`}>
-      <header className={`my-10`}>
-        <Link href={`/`}>
-          <a className={`text-5xl font-black tracking-tight text-purple-600`}>
-            PuppyCup
-          </a>
-        </Link>
-      </header>
-      <nav className={`flex space-x-2`}>
-        <Link href={`/`}>
-          <a>Home</a>
-        </Link>
-        <Link href={`/about`}>
-          <a>About</a>
-        </Link>
-      </nav>
-      {children}
-    </div>
-  );
+    <>
+      <Header />
+      <div className="wrapper">
+        <NavMain />
+      </div>
+      <div className={`wrapper -mx-5`}>{children}</div>
+
+      <Footer />
+    </>
+  )
 }
