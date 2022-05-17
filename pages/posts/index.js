@@ -14,7 +14,7 @@ export async function getServerSideProps() {
 export default function Post({ data }) {
   return (
     <Layout>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid gap-5 md:grid-cols-3">
         {data.map((post) => (
           <div key={post.id} className={`rounded-md border border-gray-800 bg-gray-900 p-5 shadow shadow-black/10`}>
             <Link href={'posts/1'}>
