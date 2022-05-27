@@ -1,7 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '../header/Logo'
-import links from '../../lib/footer-links'
+import { links } from '../../lib/footer-links'
 
 export default function Footer() {
   return (
@@ -39,7 +38,7 @@ export default function Footer() {
           <p className="text-center text-sm text-gray-400 sm:text-left">
             © 2022 PuppyCup —
             <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" className="ml-1 text-gray-500" target="_blank">
-              @knyttneve
+              @DesignByCode
             </a>
           </p>
           <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
